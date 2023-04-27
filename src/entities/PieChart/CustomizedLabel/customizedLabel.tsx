@@ -1,5 +1,5 @@
 const RADIAN = Math.PI / 180;
-export const renderCustomizedLabel = ({cx, cy, midAngle, innerRadius, outerRadius, value} : {
+export const CustomizedLabel = ({cx, cy, midAngle, innerRadius, outerRadius, value} : {
     cx: number, cy: number, midAngle: number, innerRadius: number, outerRadius: number, value: number
 }) => {
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5;

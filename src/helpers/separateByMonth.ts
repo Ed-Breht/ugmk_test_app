@@ -1,8 +1,8 @@
 import moment from "moment/moment";
 import {ProductsType} from "./types";
 
-export const separateByMonth = (data: ProductsType[]) => {
-    const separateDate = data.reduce((acc: Record<number, ProductsType[]>, date) => {
+export const separateByMonth = (data: ProductsType[]) =>
+    data.reduce((acc: Record<number, ProductsType[]>, date) => {
         if (!date.date) {
             return acc
         }
@@ -12,7 +12,4 @@ export const separateByMonth = (data: ProductsType[]) => {
         }
         acc[month].push(date);
         return acc;
-    }, {});
-
-    return separateDate
-}
+    }, {})

@@ -1,6 +1,6 @@
 import {RouteProps} from "react-router-dom";
-import {MainPage} from "../../pages/MainPage";
-import {PieChartPage} from "../../pages/PieChartPage";
+import {MainPageAsync as MainPage} from "../../pages/MainPage/MainPage.async";
+import {PieChartPageAsync as PieChartPage} from "../../pages/PieChartPage/PieChartPage.tsx.async";
 
 export enum AppRoutes {
     MAIN = 'main',

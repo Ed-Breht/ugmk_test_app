@@ -7,7 +7,7 @@ export const useReformProductData = (data: Record<number, DataByMonthType>) => {
 
     const [productType] = useStorageProductType()
 
-    const dataAfterReform = Object.entries(data).map((item) => {
+    return Object.entries(data).map((item) => {
 
         const [month, el] = item;
 
@@ -37,7 +37,5 @@ export const useReformProductData = (data: Record<number, DataByMonthType>) => {
                 result.factoryB_sum = el[2].product1 + el[2].product2;
         }
         return result;
-    })
-
-    return dataAfterReform;
+    });
 }
