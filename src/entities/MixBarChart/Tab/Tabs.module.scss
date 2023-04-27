@@ -1,0 +1,17 @@
+.Tabs {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+
+}
+
+.Card {
+  padding: 15px;
+  border-radius: 12px;
+  &[data-theme="normal"] {
+    background: #b9b9b9;
+  }
+  &[data-theme="outlined"] {
+    border: 1px solid #6be8ff;
+  }
+}

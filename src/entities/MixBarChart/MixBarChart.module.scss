@@ -1,0 +1,12 @@
+.Wrapper {
+  height: 50vh;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .chart {
+    display: flex;
+    justify-content: center;
+    min-width: 1000px;
+  }
+}
